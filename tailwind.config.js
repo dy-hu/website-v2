@@ -7,10 +7,34 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        inter: ['var(--font-inter)']
+      },
+      colors: {
+        background: "rgb(var(--background))",
+        foreground: "rgb(var(--foreground))",
+        muted: "rgb(var(--muted))",
+        accent: "rgb(var(--accent))",
+      },
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        'raindrop': 'linear-gradient(180deg, rgba(210,225,255,0.45) 0%, rgba(180,210,240,0.22) 60%, rgba(255,255,255,0.08) 100%)'
+      },
+      boxShadow: {
+        "glass-inset": 'inset 0 17px 5px -9px rgba(0, 123, 255, 0.05)',
+        'glass-sm': '5px 5px 20px 0px rgb(220, 65, 90)',
+      },
+      keyframes: {
+        'spin-reverse': {
+          '0%': {transform: 'rotate(0deg)'},
+          '100%': {transform: 'rotate(-360deg)'},
+        },
+      },
+      animation: {
+        'spin-slow': 'spin 40s linear infinite',
+        'spin-slow-reverse': 'spin-reverse 40s linear infinite',
+      },
+      screens: {
+        'xs': '480px'
       },
     },
   },

@@ -15,6 +15,21 @@ export const metadata = {
   icons: {
     icon: "/favicon.ico",
   },
+  openGraph: {
+    title: "Daniel Hu",
+    description: "danielhu.dev",
+    type: "website",
+    url: "https://danielhu.dev",
+    siteName: "Daniel Hu",
+    images: [
+      {
+        url: "/favicon.ico",
+        width: 1200,
+        height: 630,
+        alt: "Daniel Hu",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({ children }) {

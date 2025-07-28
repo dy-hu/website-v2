@@ -12,7 +12,7 @@ const AboutDetails = () => {
                     Princeton CS Alum 
                 </h2> */}
 
-                <p className='text-light text-base sm:text-lg md:text-xl'>I&apos;m a software engineer at GitHub Copilot. I like volleyball, working out, and traveling, and am a frustrated fan of the New York Knicks. As an engineer, I like wearing multiple hats, but I am most interested in the emerging applications of artificial intelligence &amp; other impactful and tangible systems. Despite a short semester escape through Singapore, I spent most of my life in New Jersey, having graduated Magna Cum Laude with a B.A. in Computer Science from Princeton.
+                <p className='text-light text-base sm:text-lg md:text-xl'>I&apos;m a software engineer at GitHub Copilot. I like volleyball, working out, and traveling, and am a recent fan of the New York Knicks. As an engineer, I like wearing multiple hats, but I am most interested in the emerging applications of artificial intelligence &amp; other impactful and tangible systems. Despite a short semester escape through Singapore, I spent most of my life in New Jersey, having graduated Magna Cum Laude with a B.A. in Computer Science from Princeton.
 
 <br /> <br /> At school, I completed several research projects -- namely, Natural Language Processing research under Prof. Christiane Fellbaum, Cryo-EM Graphics research under Prof. Ellen Zhong, and my thesis on the path dependence of transit infrastructure under Prof. Robert Fish.
 

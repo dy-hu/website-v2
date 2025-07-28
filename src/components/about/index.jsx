@@ -1,6 +1,7 @@
 "use client"
 import React from 'react'
 import ItemLayout from './ItemLayout'
+import Image from "next/image";
 
 const AboutDetails = () => {
   return (
@@ -8,15 +9,18 @@ const AboutDetails = () => {
         <div className='grid grid-cols-12 gap-4 xs:gap-6 md:gap-8 w-full max-w-7xl mx-auto'>
             
             <ItemLayout className='col-span-full row-span-2 flex-col items-start'>
-                {/* <h2 className='text-2xl text-left w-full capitalize'>
-                    Princeton CS Alum 
-                </h2> */}
-
-                <p className='text-light text-base sm:text-lg md:text-xl'>I&apos;m a software engineer at GitHub Copilot. I like volleyball, working out, and traveling, and am a recent fan of the New York Knicks. As an engineer, I like wearing multiple hats, but I am most interested in the emerging applications of artificial intelligence &amp; other impactful and tangible systems. Despite a short semester escape through Singapore, I spent most of my life in New Jersey, having graduated Magna Cum Laude with a B.A. in Computer Science from Princeton.
+                <div className="w-full flex flex-col md:flex-row gap-8 items-stretch">
+                  <div className="md:w-2/3 w-full flex flex-col justify-center">
+                    <p className='text-light text-base sm:text-lg md:text-xl'>I&apos;m a software engineer at GitHub Copilot. I like volleyball, working out, and traveling, and am a recent fan of the New York Knicks. As an engineer, I like wearing multiple hats, but I am most interested in the emerging applications of artificial intelligence &amp; other impactful and tangible systems. Despite a short semester escape through Singapore, I spent most of my life in New Jersey, having graduated Magna Cum Laude with a B.A. in Computer Science from Princeton.
 
 <br /> <br /> At school, I completed several research projects -- namely, Natural Language Processing research under Prof. Christiane Fellbaum, Cryo-EM Graphics research under Prof. Ellen Zhong, and my thesis on the path dependence of transit infrastructure under Prof. Robert Fish.
 
 <br /> <br /> Please feel free to shoot me a message if you&apos;d like to chat! </p>
+                  </div>
+                  <div className="md:w-1/3 w-full flex justify-center items-stretch">
+                    <Image src="/profile.jpeg" alt="Daniel Hu profile" width={400} height={400} className="rounded-xl border border-accent/30 shadow-glass-inset bg-background/30 w-full h-full object-contain" />
+                  </div>
+                </div>
             </ItemLayout>
 
 
